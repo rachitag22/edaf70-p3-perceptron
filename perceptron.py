@@ -1,5 +1,5 @@
 import matplotlib,sys
-from matplotlim import pyplot as plot 
+from matplotlib import pyplot as plot 
 import numpy as np
 
 class Perceptron(object):
@@ -17,6 +17,7 @@ class Perceptron(object):
 		else:
 			activation = -1
 		return activation
+	
 	# calculate prediction accuracy	
 	def checkAccuracy(matrix, weights):
 		correct = 0.0

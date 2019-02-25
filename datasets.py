@@ -3,7 +3,7 @@ Reader of libsvm format
 """
 __author__ = 'Pierre Nugues'
 import numpy as np
-from urllib import urlopen
+from urllib.request import urlopen
 
 
 def read_libsvm_file(file_path):
