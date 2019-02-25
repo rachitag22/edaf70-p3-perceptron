@@ -11,12 +11,12 @@ class Perceptron(object):
 
 
 	def prediction(self, input):
-		sum =np.dot(input, self.weights[1:])+self.weights[0]
+		sum = np.dot(input, self.weights[1:]) + self.weights[0]
+		# return activation based on sum
 		if sum > 0:
-			activation = 1
+			return 1
 		else:
-			activation = -1
-		return activation
+			return -1
 	
 	# calculate prediction accuracy	
 	def checkAccuracy(matrix, weights):
